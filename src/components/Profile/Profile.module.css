@@ -42,7 +42,12 @@ ul {
 }
 
 .stats {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #f3f6f9;
   list-style: none;
 }
 
@@ -54,16 +59,7 @@ ul {
   font-weight: 600;
 }
 
-ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 20px;
-  background-color: #f3f6f9;
-}
-
-li {
+.stats li {
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 import user from './data/user';
+import data from './data/data';
 
 export const App = () => {
   const { username, tag, location, avatar, stats } = user;
@@ -13,6 +14,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
