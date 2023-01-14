@@ -1,0 +1,26 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.offline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: red;
+}
+
+.online {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: green;
+}
