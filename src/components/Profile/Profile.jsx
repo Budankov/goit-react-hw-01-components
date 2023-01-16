@@ -35,11 +35,6 @@ export const Profile = ({
   );
 };
 
-Profile.defaultProps = {
-  avatar:
-    'https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png',
-};
-
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,

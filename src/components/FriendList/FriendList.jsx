@@ -2,19 +2,16 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import { FriendListItem } from './FriendListItem/FriendListItem';
 
-export const FriendList = ({ friends }) => {
-  const elements = friends.map(({ id, ...props }) => (
-    <FriendListItem key={id} {...props} />
-  ));
+export const FriendList = ({ friends = [] }) => {
   return (
     <>
-      <ul className={css.friendList}>{elements}</ul>
+      <ul className={css.friendList}>
+        {friends.map(({ id, ...props }) => (
+          <FriendListItem key={id} {...props} />
+        ))}
+      </ul>
     </>
   );
-};
-
-FriendList.defaultProps = {
-  friends: [],
 };
 
 FriendList.propTypes = {

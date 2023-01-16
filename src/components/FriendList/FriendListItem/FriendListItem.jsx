@@ -11,11 +11,6 @@ export const FriendListItem = ({ isOnline, avatar, name: userName }) => {
   );
 };
 
-FriendListItem.defaultProps = {
-  avatar:
-    'https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png',
-};
-
 FriendListItem.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
